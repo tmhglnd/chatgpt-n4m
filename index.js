@@ -22,19 +22,31 @@ let ROLE = 'user';
 let TEMPERATURE = 1;
 let MAX_TOKENS = Infinity;
 
+// Chat history array
+let HISTORY = [];
+
 // The prompt send to OpenAI API with error handling
 // Returns the result and a message 'done'
 // Else returns a message 'error'
 //
 async function prompt(p){
 	try {
+		// add prompt to chat history
+		HISTORY.push({ role: ROLE, content: p });
+
+		// await chat completion with settings and chat history
 		const chat = await openai.createChatCompletion({
 			model: 'gpt-3.5-turbo',
-			messages: [{ role: ROLE, content: p }],
+			messages: HISTORY,
 			temperature: TEMPERATURE,
 			max_tokens: MAX_TOKENS
 		});
+		// add response to chat history
+		HISTORY.push(chat.data.choices[0].message);
+		// output response to max patch
 		max.outlet(chat.data.choices[0].message.content);
+		// output history (for storage and saving in dictionary)
+		max.outlet('history', { history: HISTORY });
 		max.outlet('done');
 	} catch (error) {
 		if (error.response){
@@ -84,5 +96,17 @@ max.addHandlers({
 		} else {
 			max.post(`Error: role ${r} is not user, assistent or system`);
 		}
+	},
+	// clear the chat history
+	'clear' : () => {
+		HISTORY = [];
+	},
+	// output the current history
+	'history' : () => {
+		max.outlet('history', { history: HISTORY });
+	},
+	// load the history of a chat from a dictionary
+	'load_history' : (dict) => {
+		HISTORY = dict.history ? dict.history : [];
 	}
 });

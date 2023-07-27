@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 96.0, 983.0, 837.0 ],
+		"rect" : [ 34.0, 96.0, 1033.0, 837.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,149 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 575.0, 375.0, 82.0, 33.0 ],
+					"text" : "clear the chat history"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 575.0, 410.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 575.0, 450.0, 88.0, 33.0 ],
+					"text" : "output the current history"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 121.0, 504.0, 119.0, 20.0 ],
+					"text" : "write the chat history"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 755.0, 375.0, 150.0, 33.0 ],
+					"text" : "read a stored history json file back into the script"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 575.0, 485.0, 44.0, 22.0 ],
+					"text" : "history"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 680.0, 435.0, 121.0, 22.0 ],
+					"text" : "prepend load_history"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 680.0, 375.0, 66.0, 22.0 ],
+					"text" : "read, bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 680.0, 405.0, 50.5, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 180.0, 480.0, 34.0, 22.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 121.0, 480.0, 50.5, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-8",
@@ -116,7 +259,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 840.0, 129.0, 35.0 ],
+					"patching_rect" : [ 450.0, 945.0, 129.0, 35.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -127,7 +270,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.0, 690.0, 70.0, 20.0 ],
+					"patching_rect" : [ 450.0, 795.0, 70.0, 20.0 ],
 					"text" : "References"
 				}
 
@@ -139,7 +282,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 810.0, 316.0, 22.0 ],
+					"patching_rect" : [ 450.0, 915.0, 316.0, 22.0 ],
 					"text" : "https://platform.openai.com/docs/api-reference/models/list"
 				}
 
@@ -151,7 +294,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 717.0, 219.0, 22.0 ],
+					"patching_rect" : [ 450.0, 822.0, 219.0, 22.0 ],
 					"text" : "https://www.npmjs.com/package/openai"
 				}
 
@@ -163,7 +306,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 747.0, 319.0, 22.0 ],
+					"patching_rect" : [ 450.0, 852.0, 319.0, 22.0 ],
 					"text" : "https://platform.openai.com/docs/api-reference/chat/create"
 				}
 
@@ -175,7 +318,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 777.0, 205.0, 22.0 ],
+					"patching_rect" : [ 450.0, 882.0, 205.0, 22.0 ],
 					"text" : "https://platform.openai.com/tokenizer"
 				}
 
@@ -187,7 +330,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 660.0, 315.0, 307.0, 100.0 ],
+					"patching_rect" : [ 680.0, 252.0, 307.0, 100.0 ],
 					"text" : "The maximum number of tokens to generate in the chat completion. The GPT family of models process text using tokens, which are common sequences of characters found in text. A helpful rule of thumb is that one token generally corresponds to ~4 characters of text for common English text. This translates to roughly ¾ of a word (so 100 tokens ~= 75 words)."
 				}
 
@@ -199,7 +342,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 315.0, 43.0, 22.0 ],
+					"patching_rect" : [ 635.0, 285.0, 43.0, 22.0 ],
 					"text" : "Infinity"
 				}
 
@@ -212,7 +355,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 555.0, 315.0, 50.0, 22.0 ]
+					"patching_rect" : [ 575.0, 285.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -223,7 +366,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 360.0, 90.0, 22.0 ],
+					"patching_rect" : [ 575.0, 330.0, 90.0, 22.0 ],
 					"text" : "max_tokens $1"
 				}
 
@@ -235,7 +378,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 490.5, 315.0, 19.0, 22.0 ],
+					"patching_rect" : [ 490.5, 345.0, 19.0, 22.0 ],
 					"text" : "t l"
 				}
 
@@ -297,7 +440,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 248.0, 90.0, 22.0 ],
+					"patching_rect" : [ 575.0, 225.0, 90.0, 22.0 ],
 					"text" : "temperature $1"
 				}
 
@@ -309,7 +452,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 615.0, 180.5, 285.0, 60.0 ],
+					"patching_rect" : [ 635.0, 157.5, 285.0, 60.0 ],
 					"text" : "set the temperature. What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic."
 				}
 
@@ -325,7 +468,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 555.0, 218.0, 50.0, 22.0 ],
+					"patching_rect" : [ 575.0, 195.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -398,7 +541,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 83.0, 468.0, 24.0, 24.0 ]
+					"patching_rect" : [ 83.0, 479.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -410,7 +553,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 468.0, 24.0, 24.0 ]
+					"patching_rect" : [ 45.0, 479.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -418,11 +561,11 @@
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 45.0, 438.0, 95.0, 22.0 ],
-					"text" : "route error done"
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 45.0, 438.0, 133.0, 22.0 ],
+					"text" : "route error done history"
 				}
 
 			}
@@ -441,13 +584,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"linecount" : 11,
+					"linecount" : 32,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 513.0, 377.0, 156.0 ],
-					"text" : "\"Max/MSP is a visual programming language for music and multimedia creation. It is a software development environment used by artists, musicians, and designers to create custom interactive audio and video applications. Max allows users to visually connect objects and modules together to create complex interactive systems, manipulating and processing audio, MIDI, video, and other types of data in real-time. MSP is a real-time audio processing extension for Max, which provides a wide range of tools and modules for audio synthesis, effects processing, and mixing. Together, Max/MSP offers a flexible and powerful platform for creative expression and experimentation in the field of multimedia arts.\""
+					"patching_rect" : [ 45.0, 540.0, 377.0, 437.0 ],
+					"text" : "\"Max/MSP is a visual programming language and development environment for creating interactive and multimedia applications. It was developed by Cycling '74 and is widely used for sound synthesis, music composition, and real-time audio processing.\n\nMax/MSP allows users to build audio and multimedia applications by connecting various modules called \\\"objects\\\" through a graphical user interface. Objects can represent audio generators, filters, effects, MIDI controllers, visual components, and more. Users can connect these objects by drawing lines between them to define the signal flow and data processing.\n\nOne of the noteworthy features of Max/MSP is its ability to support real-time interactions and live improvisation. Users can modify and manipulate their projects in real-time, making it a popular choice for live performances, installations, and interactive audiovisual experiences.\n\nMax/MSP provides a wide range of pre-built objects and libraries, allowing users to create complex audio and multimedia applications without writing code. However, for those with programming experience, Max/MSP also provides an advanced mode called \\\"Max for Live\\\" that allows the integration of custom code written in languages like Max's own Max Object Language (MOL), JavaScript, and C/C++.\n\nMax/MSP is a versatile tool used by musicians, artists, designers, and developers for various purposes, including live music performances, interactive installations, sound design, and music composition. It offers a flexible and intuitive interface that allows both beginners and advanced users to explore the possibilities of audio and multimedia programming.\""
 				}
 
 			}
@@ -517,7 +660,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 555.0, 438.0, 400.0, 220.0 ],
+					"patching_rect" : [ 450.0, 540.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -533,6 +676,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -564,6 +709,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -578,8 +730,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-13", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"source" : [ "obj-13", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -592,8 +758,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -643,6 +830,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -733,7 +927,7 @@
 			}
 , 			{
 				"name" : "index.js",
-				"bootpath" : "~/Drive/work/code/max/sketches/chatgpt-n4m",
+				"bootpath" : "~/Drive/work/code/max/major_projects/chatgpt-n4m",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
