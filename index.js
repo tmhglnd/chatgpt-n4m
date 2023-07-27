@@ -11,6 +11,7 @@ require('dotenv').config();
 const max = require('max-api');
 const { Configuration, OpenAIApi } = require('openai');
 
+// Use the API Key from the .env file
 const config = new Configuration({
 	apiKey: process.env.OPENAI_API_KEY
 });

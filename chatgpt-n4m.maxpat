@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 130.0, 120.0, 47.0 ],
+					"patching_rect" : [ 79.0, 130.0, 122.0, 47.0 ],
 					"text" : "start script (if not automatically started or after error)"
 				}
 
@@ -175,7 +175,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 660.0, 315.0, 305.0, 100.0 ],
+					"patching_rect" : [ 660.0, 315.0, 307.0, 100.0 ],
 					"text" : "The maximum number of tokens to generate in the chat completion. The GPT family of models process text using tokens, which are common sequences of characters found in text. A helpful rule of thumb is that one token generally corresponds to ~4 characters of text for common English text. This translates to roughly ¾ of a word (so 100 tokens ~= 75 words)."
 				}
 
@@ -337,7 +337,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 210.5, 114.0, 33.0 ],
+					"patching_rect" : [ 79.0, 210.5, 117.0, 33.0 ],
 					"text" : "install the packages (only needed once)"
 				}
 
@@ -429,13 +429,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"linecount" : 21,
+					"linecount" : 11,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 513.0, 375.0, 290.0 ],
-					"text" : "\"Max/MSP is a visual programming language and development environment used for creating interactive and real-time music, audio, and multimedia applications. It was developed by Miller Puckette at IRCAM (Institut de Recherche et Coordination Acoustique/Musique) in the late 1980s and later commercialized by Cycling '74.\n\nMax/MSP allows users to create custom software for performing, composing, and manipulating sound through a graphical user interface (GUI). Users can drag and drop and connect different objects, called \\\"objects boxes,\\\" to create signal routing, synthesis algorithms, MIDI processing, and various audio effects. Users can also write custom scripts using Max's proprietary language, which is based on the C programming language, to create more complex functionalities.\n\nMax/MSP has become popular among musicians, composers, sound designers, and multimedia artists due to its flexibility, intuitive interface, and ability to integrate with other software and hardware platforms. It is widely used in live performances, installations, sound design for games and films, and academic research in the field of computer music and multimedia.\""
+					"patching_rect" : [ 45.0, 513.0, 377.0, 156.0 ],
+					"text" : "\"Max/MSP is a visual programming language for music and multimedia creation. It is a software development environment used by artists, musicians, and designers to create custom interactive audio and video applications. Max allows users to visually connect objects and modules together to create complex interactive systems, manipulating and processing audio, MIDI, video, and other types of data in real-time. MSP is a real-time audio processing extension for Max, which provides a wide range of tools and modules for audio synthesis, effects processing, and mixing. Together, Max/MSP offers a flexible and powerful platform for creative expression and experimentation in the field of multimedia arts.\""
 				}
 
 			}
@@ -521,8 +521,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,

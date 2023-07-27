@@ -1,4 +1,4 @@
-# chatGPT with Node4Max
+# ChatGPT with Node4Max
 
 An example using OpenAI's GPT API with NodeJS in MaxMSP
 
@@ -12,6 +12,8 @@ Provide a prompt as a string/symbol via the `[textedit]` object (or by creating 
 
 **You will need your own `API_KEY` from OpenAI to be able to work with the API.**
 
+![Screenshot of the patcher](/media/screenshot.png)
+
 # Install 
 
 Download zip
@@ -21,7 +23,7 @@ Download zip
 2. unzip
 ```
 
-Git clone
+or git clone
 
 ```
 1. $ cd ~/Documents/Max\ 8/Library
