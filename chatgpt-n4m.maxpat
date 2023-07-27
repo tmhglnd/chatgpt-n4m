@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 450.0, 45.0, 323.0, 20.0 ],
+					"text" : "!!! Make sure you add your own API key to a .env file !!!"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-78",
 					"linecount" : 3,
 					"maxclass" : "comment",
