@@ -6,16 +6,19 @@
 // MIT License
 //
 
+// updated for openai node library 4.0.0+ and gpt4 model
+// @un1crom aka #worksonbecoming www.worksonbecoming.com 
+
 require('dotenv').config();
 
 const max = require('max-api');
-const { Configuration, OpenAIApi } = require('openai');
+// Import OpenAI package
+const { OpenAI } = require("openai");
 
-// Use the API Key from the .env file
-const config = new Configuration({
-	apiKey: process.env.OPENAI_API_KEY
+
+const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY
 });
-const openai = new OpenAIApi(config);
 
 // Settings
 let ROLE = 'user';
@@ -35,16 +38,16 @@ async function prompt(p){
 		HISTORY.push({ role: ROLE, content: p });
 
 		// await chat completion with settings and chat history
-		const chat = await openai.createChatCompletion({
-			model: 'gpt-3.5-turbo',
+		const chat = await openai.chat.completions.create({
+            model: "gpt-4-1106-preview", // Replace with your desired model
 			messages: HISTORY,
 			temperature: TEMPERATURE,
 			max_tokens: MAX_TOKENS
 		});
 		// add response to chat history
-		HISTORY.push(chat.data.choices[0].message);
+		HISTORY.push(chat.choices[0].message);
 		// output response to max patch
-		max.outlet(chat.data.choices[0].message.content);
+		max.outlet(chat.choices[0].message.content);
 		// output history (for storage and saving in dictionary)
 		max.outlet('history', { history: HISTORY });
 		max.outlet('done');
