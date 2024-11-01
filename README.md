@@ -27,7 +27,7 @@ or git clone
 
 ```
 1. $ cd ~/Documents/Max\ 8/Library
-2. $ git clone https://github.com/tmhglnd/image-scraper-n4m.git
+2. $ git clone https://github.com/tmhglnd/chatgpt-n4m.git
 ```
 
 Go to the directory and run
